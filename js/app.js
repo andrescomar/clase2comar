@@ -1,28 +1,29 @@
-let unNumero = 5;
+let nombrePerro = prompt("Ingrese nombre de su perro");
 
-if ( unNumero > 10) {
-    alert("Numero alto")
+if (nombrePerro == "") {
+    alert("Ingrese el nombre de su perro por favor")
 } else {
-    alert("Numero menor a 10");
+    alert("Genial tu perro se llama " + nombrePerro)
 }
 
-let nombre = prompt("Ingrese su nombre");
+let Perros =  parseInt(prompt("Cuantos perros tienes ?"))
+var cantPerros = 5;
 
-if (nombre == "") {
-    alert("Ingrese su nombre por favor")
+if (Perros <= cantPerros) {
+    alert("Tenes pocos perros")
+} else if(Perros < 15) {
+    alert("Tenes una cantidad justa de perros")
+} else if(Perros > 30) {
+    alert("Deberias regalar algunos perros")
 } else {
-    alert("Hola señor " + nombre)
+    alert( Perros + " son muchos perros")
 }
 
-let myAge =  parseInt(prompt("Ingrese su edad"))
-var esMenor = 18;
+let nombreGato = prompt("Ingrese nombre de su gato")
+let nombreGata = prompt("Ingrese nombre de su gata")
 
-if (myAge <= esMenor) {
-    alert("sos menor de edad... no pasas")
-} else if(myAge < 30) {
-    alert("Sos mayor... pasa")
-} else if(myAge > 60) {
-    alert("quedate en casa")
+if ( (nombreGato != "") && (nombreGata != "") ) {
+    alert("Tu gato se llama " + nombreGato + " y tu gata " + nombreGata)
 } else {
-    alert("pasa vos tenes " + myAge)
+    alert("Por favor ingrese nombres de sus mascotas")
 }
