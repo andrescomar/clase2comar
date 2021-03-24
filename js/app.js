@@ -14,5 +14,15 @@ if (nombre == "") {
     alert("Hola señor " + nombre)
 }
 
-let myAge = prompt("Ingrese su edad")
+let myAge =  parseInt(prompt("Ingrese su edad"))
+var esMenor = 18;
 
+if (myAge <= esMenor) {
+    alert("sos menor de edad... no pasas")
+} else if(myAge < 30) {
+    alert("Sos mayor... pasa")
+} else if(myAge > 60) {
+    alert("quedate en casa")
+} else {
+    alert("pasa vos tenes " + myAge)
+}
